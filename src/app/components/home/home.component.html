@@ -1,0 +1,7 @@
+<div class="grid_countries" *ngIf="dataCountries.length > 0">
+    <app-card *ngFor="let item of dataCountries" [item]="item"></app-card>
+</div>
+
+<div class="loader">
+    <p-progressSpinner *ngIf="dataCountries.length === 0"></p-progressSpinner>
+</div>

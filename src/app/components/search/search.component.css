@@ -1,0 +1,22 @@
+.bowl_filtters {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 70px auto;
+    align-items: center;
+}
+
+form {
+    max-width: 700px;
+    flex: 0.6;
+}
+
+span {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+

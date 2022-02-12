@@ -1,0 +1,36 @@
+.mores {
+    padding: 50px;
+    font-size: 1.2rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.titles_card {
+    line-height: 40px;
+}
+
+.left_Side_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn_mar_top {
+    margin-top: 32px;
+}
+
+.name {
+    font-size: 2rem;
+    font-family: cursive;
+    font-weight: 700;
+}
+
+.tits {
+    font-size: 1.1rem;
+    font-family: cursive;
+    font-weight: bold;
+}

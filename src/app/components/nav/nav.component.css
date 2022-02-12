@@ -1,0 +1,36 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--body);
+    z-index: 100;
+    box-shadow: var(--shdw);
+}
+
+.content_nav {
+    width: 90%;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text);
+}
+
+
+.title span {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-family: cursive;
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.pi-map-marker {
+    color: var(--praimary);
+}

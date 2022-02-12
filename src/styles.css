@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    --body: rgb(238, 238, 238);
+    --text: #000;
+    --fill: rgb(90, 90, 90);
+    --shdw: 0 1px 7px rgba(0, 0, 0, 0.219);
+    --praimary: #6366F1;
+}
+
+body.dark {
+    --body: rgb(48, 47, 47);
+    --text: rgb(235, 235, 235);
+    --shdw: 0 1px 7px rgba(255, 255, 255, 0.418);
+    --fill: rgb(235, 235, 235);
+    --praimary: #78ba2c;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--body);
+}
+
+/* done */
+
+.grid_countries {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 30px;
+    justify-content: center;
+}
+
+.loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+}

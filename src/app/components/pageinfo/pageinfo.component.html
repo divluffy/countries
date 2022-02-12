@@ -1,0 +1,57 @@
+<div class="card" *ngIf="dataCountries[0]">
+    <div class="left_Side_info">
+        <p-image src={{dataCountries[0].flags.png}} alt="Image" width="350" [preview]="true">
+            <ng-template pTemplate="indicator">
+                <i class="pi pi-eye" style="transform: scale(3);"></i>
+            </ng-template>
+        </p-image>
+        <p-button class="btn_mar_top" (click)="goToMap(dataCountries[0].maps.googleMaps)" icon="pi pi-external-link"
+            label="Show In Google Maps"
+            [style]="{'background-color': 'var(--praimary)', 'border': '1px solid var(--praimary)'}"></p-button>
+    </div>
+
+    <div class="titles_card">
+        <span class="name">{{dataCountries[0].name.common}}</span>
+        <div>
+            <span class="tits">population: </span>
+            <span>{{dataCountries[0].population}}</span>
+        </div>
+        <div>
+            <span class="tits">region: </span>
+            <span>{{dataCountries[0].region}}</span>
+        </div>
+        <div>
+            <span class="tits">capital: </span>
+            <span> {{dataCountries[0].capital}}</span>
+        </div>
+
+        <div>
+            <span class="tits">timezones: </span>
+            <span> {{dataCountries[0].timezones[0]}}</span>
+        </div>
+
+        <div>
+            <span class="tits">flag: </span>
+            <span> {{dataCountries[0].flag}}</span>
+        </div>
+
+        <div>
+            <span class="tits">languages: </span>
+            <span> {{dataCountries[0].languages}}</span>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="mores" *ngIf="dataCountries[0]">
+    <span>Countries around <strong>{{dataCountries[0].name.common}}:</strong> </span>
+</div>
+
+<div class="grid_countries">
+    <app-card *ngFor="let item of dataSubregion" [item]="item"></app-card>
+</div>
+
+<div class="loader">
+    <p-progressSpinner *ngIf="dataCountries.length === 0"></p-progressSpinner>
+</div>

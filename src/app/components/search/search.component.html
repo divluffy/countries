@@ -1,0 +1,14 @@
+<section class="bowl_filtters">
+    <p-button [style]="{'background-color': 'var(--praimary)'}" *ngIf="!isLoading" label="Search" icon="pi pi-search"
+        [loading]="isLoading" (onClick)="showSearch()">
+    </p-button>
+    <form (submit)="onSubmit($event)">
+        <span class="p-input-icon-left" *ngIf="isLoading">
+            <i class="pi pi-search"></i>
+            <input name="query" type="text" pInputText [(ngModel)]="query" placeholder="Search">
+        </span>
+    </form>
+    <p-dropdown [style]="{'background-color': 'var(--body)', 'border': '1px solid var(--praimary)'}"
+        placeholder="Select a Region" class="tester" [options]="countries" [(ngModel)]="selectedRegion"
+        optionLabel="name" (onChange)="onRegion()"></p-dropdown>
+</section>

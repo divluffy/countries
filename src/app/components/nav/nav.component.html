@@ -1,0 +1,16 @@
+<nav>
+    <div class="content_nav">
+        <div class="title">
+            <a routerLink="/">
+                <i class="pi pi-map-marker" style="font-size: 2rem"></i>
+            </a>
+            <span>Where in the world?</span>
+        </div>
+        <div class="dark_mode">
+            <p-toggleButton class="toogle_mode"
+                [style]="{'width': '10em','background-color': 'var(--body)', 'border': '1px solid var(--praimary)'}"
+                [(ngModel)]="darkMode" (click)="onDarkMode()" onLabel="Darke Mode" offLabel="Darke Mode"
+                onIcon="pi pi-sun" offIcon="pi pi-moon"></p-toggleButton>
+        </div>
+    </div>
+</nav>

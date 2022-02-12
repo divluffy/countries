@@ -1,0 +1,22 @@
+<div class="card">
+    <a [routerLink]="['/country', item.name.common]">
+        <div class="cover">
+            <img src={{item.flags.png}} alt="">
+        </div>
+        <div class="titles_card">
+            <span class="name">{{ item.name.common ? item.name.common : item.name }}</span>
+            <div>
+                <span class="tits">population: </span>
+                <span>{{item.population}}</span>
+            </div>
+            <div>
+                <span class="tits">region: </span>
+                <span>{{item.region}}</span>
+            </div>
+            <div>
+                <span class="tits">capital: </span>
+                <span> {{item.capital}}</span>
+            </div>
+        </div>
+    </a>
+</div>
